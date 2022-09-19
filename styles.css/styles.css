@@ -111,6 +111,8 @@ img {
   display: flex;
   gap: 50px;
   margin-left: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-contact {
@@ -123,6 +125,7 @@ img {
 .header-contact:hover,
 .header-contact:focus {
   color: var(--accent);
+  cursor: pointer;
 }
 
 /* hero */
@@ -294,6 +297,7 @@ img {
 
 .address-link,
 .address-link:visited {
+  display: block;
   color: var(--white);
   opacity: 0.6;
 
@@ -383,4 +387,32 @@ img {
 
   font-size: 16px;
   line-height: 1.88;
+}
+
+/* icons */
+
+.icon {
+  display: block;
+  margin: auto;
+}
+
+.icon.mail {
+  width: 16px;
+  height: 12px;
+}
+
+.icon.phone {
+  width: 10px;
+  height: 16px;
+}
+
+.header-contact.display-flex {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-container {
+  padding-top: 1px;
+  padding-bottom: 0;
+  height: auto;
 }
