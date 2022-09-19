@@ -424,12 +424,20 @@ img {
   height: 120px;
 }
 
-.socialmedia-icon {
+.social-media-icon {
   width: 20px;
   height: 20px;
+  margin: auto;
 }
 
-.socialmedia-icon-bcg {
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.social-media-icon-bcg {
   padding: 12px;
 
   border-radius: 50%;
@@ -437,7 +445,7 @@ img {
   color: var(--social-media-icon);
 }
 
-.socialmedia-icon-bcg:hover {
+.social-media-icon-bcg:hover {
   background-color: var(--accent);
   color: var(--white);
 }
