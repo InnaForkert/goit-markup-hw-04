@@ -21,6 +21,7 @@
 h1,
 h2,
 h3,
+h4,
 p {
   margin: 0;
 }
@@ -311,6 +312,11 @@ img {
 
 /* footer */
 
+.footer.container {
+  display: flex;
+  gap: 70px;
+}
+
 .page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -358,6 +364,22 @@ img {
 .address-link:hover,
 .address-link:focus {
   color: var(--accent);
+}
+
+.footer-subheading {
+  margin-bottom: 20px;
+  padding-top: 12px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: var(--white);
+}
+
+.page-footer .social-media-icon-bcg {
+  color: var(--white);
 }
 
 /* portfolio page */
