@@ -360,6 +360,7 @@ img {
 .footer.container {
   display: flex;
   gap: 70px;
+  align-items: baseline;
 }
 
 .page-footer {
@@ -412,9 +413,8 @@ img {
 }
 
 .footer-subheading {
+  display: inline-block;
   margin-bottom: 20px;
-  padding-top: 12px;
-
   font-weight: 700;
 
   text-transform: uppercase;
@@ -424,6 +424,11 @@ img {
 }
 
 .page-footer .social-media-icon-bcg {
+  color: var(--white);
+}
+
+.social-media-link.footer-icon {
+  background-color: rgba(255, 255, 255, 0.1);
   color: var(--white);
 }
 
@@ -547,6 +552,7 @@ img {
   border-radius: 50%;
 
   color: var(--social-media-icon);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .social-media-icon-bcg:hover {
