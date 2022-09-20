@@ -138,7 +138,7 @@ img {
 /* hero */
 
 .hero {
-  height: 600px;
+  min-height: 600px;
   max-width: 1600px;
   margin: 0 auto;
 
@@ -146,7 +146,16 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
 
-  background-image: url("./images/hero-bcg.jpg");
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero-bcg.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-heading {
@@ -433,6 +442,12 @@ img {
 .product {
   width: 370px;
   margin: 0;
+}
+
+.product:hover,
+.product:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .product-description {
