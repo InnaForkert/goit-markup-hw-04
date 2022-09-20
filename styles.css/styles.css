@@ -138,11 +138,15 @@ img {
 /* hero */
 
 .hero {
+  height: 600px;
+  max-width: 1600px;
+  margin: 0 auto;
+
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
 
-  background-color: var(--black-background);
+  background-image: url("./images/hero-bcg.jpg");
 }
 
 .hero-heading {
