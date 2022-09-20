@@ -520,9 +520,3 @@ img {
   background-color: var(--accent);
   color: var(--white);
 }
-
-.icon-container {
-  padding-top: 1px;
-  padding-bottom: 0;
-  height: auto;
-}
