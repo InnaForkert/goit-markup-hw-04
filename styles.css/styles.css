@@ -21,9 +21,13 @@
 h1,
 h2,
 h3,
-h4,
-p {
+p,
+b {
   margin: 0;
+}
+
+a {
+  color: inherit;
 }
 
 body {
@@ -272,6 +276,7 @@ img {
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: var(--white);
 }
 
 .team-photo {
@@ -290,7 +295,23 @@ img {
 .team-text {
   font-size: 16px;
 
-  margin-bottom: 30px;
+  margin-bottom: 16px;
+}
+
+.social-media-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--social-media-icon);
+}
+
+.social-media-link:hover,
+.social-media-link:focus {
+  background-color: var(--accent);
+  color: var(--white);
 }
 
 /* clients */
@@ -311,8 +332,8 @@ img {
   color: var(--social-media-icon);
 }
 
-.client:hover,
-.client:focus {
+.client-link:hover,
+.client-link:focus {
   color: var(--accent);
   border-color: var(--accent);
   cursor: pointer;
@@ -321,6 +342,15 @@ img {
 .client-icon {
   width: 106px;
   height: 60px;
+}
+
+.client-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--social-media-icon);
 }
 
 /* footer */
@@ -509,7 +539,8 @@ img {
 }
 
 .social-media-icon-bcg {
-  padding: 12px;
+  width: 44px;
+  height: 44px;
 
   border-radius: 50%;
 
